@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color: #ff7613;
+    --text-color: #727171;
+}
+html{
+    font-size: 10px;
+}
+body{
+    font-family: Libre Franklin, sans-serif;
+    background-color: black;
+    color: white;
+    margin: 20px;
+    max-width: 85%;
+}
+
+/* common styles Applicable for all other styling */
+a {
+    text-decoration: none;
+    color: white;
+}
+.description{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--text-color);
+}
+.title{
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+.item_preTitle{
+    font-size: 1.4rem;
+    color: var(--text-color);
+    font-weight: 300;
+}
+.item_title{
+    font-size: 1.6rem;
+    color: white;
+    font-weight: 500;
+    margin: 0.8rem 0;
+}
+.item_subtitle{
+    font-size: 1.4rem;
+    color: var(--text-color);
+    font-weight: 400;
+}
+
+/* layouts */
+
+    
+
+
+.aboutme{
+    width: 90%;
+    margin: 10;
+    display: inline-flex;
+    padding: 1rem;
+    
+    
+}
+
+    
+.group-1 .group-2{
+    display:flex;
+    flex-direction: 5rem;
+    gap: 5rem;
+    
+
+}
+
+/* profile */
+.profile_container{
+    display: inline-flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+}
+
+.describe_me{
+    display: block;
+    gap: 2rem;
+    margin: 10;
+    max-width: 90%;
+}
+
+.container {
+    position: absolute;
+    top: 10;
+    right: 0;
+    padding: 10px;
+    font-size: 130%;
+  }
+.contact_list{
+    color: var(--primary-color);
+    padding: 0;
+    margin: 0;
+    
+}
+.contact-list li {
+    margin-right: 10px;
+    margin-bottom: 5px;
+  }
+  /* Example of a media query for responsiveness */
+@media only screen and (max-width: 600px) {
+    .profile_container {
+      flex-direction: column; /* Stack elements in a column on small screens */
+      align-items: flex-start; /* Adjust alignment as needed */
+    }
+  
+    .describe_me,
+    .contact_list {
+      max-width: 100%; /* Allow full width on small screens */
+      margin: 0; /* Remove margin on small screens */
+    }
+  }
+
+.profile_name_firstName{
+    color:white;
+    font-weight: 200;
+    font-size: clamp(2rem, 8vw, 4rem);
+    text-transform: capitalize;
+    display: block;
+    margin-bottom: -0.8rem;
+}
+.profile_name_lastName{
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: clamp(2.5rem, 15vw, 7rem);
+    text-transform: capitalize;
+    display: block;
+}
+.profile_title{
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+.downloadBtn{
+    display: block;
+    text-decoration: underline;
+    font-size: 1.6rem;
+    margin-top:1rem;
+}
+.downloadBtn:hover{
+    color: var(--primary-color);
+}
+.gitBtn{
+    color: var(--primary-color);
+    display: flex;
+}
+
+.linkedinBtn{
+    color: var(--primary-color);
+    display: flex;
+}
+.gitBtn:hover,.linkedinBtn:hover{
+    color: var(--text-color);
+    text-decoration: underline;
+}
+
+
+/* Expertise */
+.skill_list{
+    margin-top: 1rem;
+    margin-left: 2rem;
+    line-height: 2;
+    
+}
+
+/* education */
+.edu_item{
+    margin-top: 2rem;
+}
+.certification_item{
+    margin-top: 2rem;
+    
+}
+
+/* Experience */
+.exp_item{
+    margin: 2rem;
+}
+.exp_list{
+    margin-top: 1rem;
+    margin-left: 2rem;
+    line-height: 1;
+}
+
+/* Internship */
+.intern_item{
+    margin: 2rem;
+}
+.intern_list{
+    margin-top: 1rem;
+    margin-left: 2rem;
+    line-height: 1;
+}
